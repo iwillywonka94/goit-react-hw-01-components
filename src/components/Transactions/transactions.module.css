@@ -1,0 +1,33 @@
+.transaction_history {
+    width: 300px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: fantasy;
+    background-color: #ffffe6;
+}
+
+.table_head {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.table_direction {
+    padding: 5px;
+    border-right: 1px solid #ffe6e6;
+}
+
+.table_body {
+    background-color: #ffe6e6;
+}
+
+.table_direction_type {
+    text-transform: capitalize;
+    padding: 5px;
+}

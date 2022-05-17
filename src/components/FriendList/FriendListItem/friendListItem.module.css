@@ -1,0 +1,26 @@
+.item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ffe6e6;
+}
+
+.status_online {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: green;
+    margin-right: 10px;
+}
+
+.status_offline {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: red;
+    margin-right: 10px;
+}
+
+.name {
+    margin-left: 10px;
+}
