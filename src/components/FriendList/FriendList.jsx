@@ -4,9 +4,9 @@ import FriendListItem from './FriendListItem';
 import "./friendList.module.css"
 
 function FriendList({ friends }) {
-    const friend = friends.map(({id, ...friend}) => {
-        <FriendListItem key={id} {...friend}/>
-    })
+    const friend = friends.map(friend => (
+        <FriendListItem key={friend.id} friend={friend}/>
+    ))
     return (
         <ul className="friend-list">
             {friend}
@@ -14,8 +14,17 @@ function FriendList({ friends }) {
     )
 }
 
+FriendList.defaultProps = {
+    friends: []
+}
+
 FriendList.propType = {
-    friends: PropTypes.object,
+    friends: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        isOnline: PropTypes.bool.isRequired,
+        avatar: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired, 
+    })),
 }
 
 export default FriendList;

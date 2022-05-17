@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 
-import "./profile.module.css"
+import styles from "./profile.module.css"
 
 function Profile({ username, tag, location, avatar, stats }) {
     return (
-        <div className="profile">
-            <div className="description">
+        <div className={styles.profile}>
+            <div className={styles.description}>
                 <img
                     src={avatar}
                     alt="User avatar"
-                    className="avatar"
+                    className={styles.avatar}
                 />
                 <p className="name">{username}</p>
                 <p className="tag">{tag}</p>

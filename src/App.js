@@ -8,7 +8,7 @@ import data from './data/data.json';
 import friends from './data/friends.json';
 import transactions from './data/transactions.json';
 
-import './App.css';
+import './App.module.css';
 
 function App() {
   return (
